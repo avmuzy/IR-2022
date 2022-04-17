@@ -7,3 +7,5 @@ elif base >= 2500 < 3200:
     print('Aliquota de 7,5%')
 elif base >= 3200 < 4200:
     print('Aliquota de 15%')
+elif base >= 4200 < 5300:
+    print('Aliquota de 22,5%')
