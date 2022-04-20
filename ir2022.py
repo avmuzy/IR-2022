@@ -1,10 +1,14 @@
-
 salário = float(input("Digite o salário para cálculo do imposto: "))
 base = salário
+
 imposto = 0
-if base > 3000:
-     imposto = imposto + ((base - 3000) * 0.35)
-     base = 3000
-if base > 1000:
-     imposto = imposto + ((base - 1000) * 0.20)
-print("Salário: R$%6.2f Imposto a pagar: R$%6.2f" % (salário, imposto))
+if base < 2500:
+    print('Isento')
+elif 2500 <= base < 3200:
+    print('Aliquota de 7,5%')
+elif 3200 <= base < 4200:
+    print('Aliquota de 15%')
+elif 4200 <= base < 5300:
+    print('Aliquota de 22,5%')
+else:
+    print('Aliquota de 27,5%')
