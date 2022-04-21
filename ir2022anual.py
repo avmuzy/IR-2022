@@ -1,7 +1,9 @@
-salário = float(input("Digite o salário para cálculo do imposto: "))
-base = salário *12
-print("Rendimento anual:",base)
+salario = float(input("Digite o salário para cálculo do imposto: "))
+
+base = salario * 12
+print("Rendimento anual:", base)
 imposto = 0
+
 if base < 30000:
     print('Isento')
 
