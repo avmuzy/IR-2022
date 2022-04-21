@@ -18,3 +18,4 @@ elif 50400 <= base < 63600:
     print("imposto devido:", ((base*22.5)/100))
 else:
     print('Aliquota de 27,5%')
+    print("Imposto devido:", ((base*27.5)/100))
