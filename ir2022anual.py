@@ -8,7 +8,9 @@ dependentes = int(input(" digite o numero de dependentes: "))
 geral_dependente = (dependentes * 2275.08)
 educacao = (dependentes * 3561.50)
 print("Valor para dedução com dependentes:", (geral_dependente+educacao))
-
+deducao = (geral_dependente+educacao)
+basecalc = (base-deducao)
+print("Base de calculo com as deduções", basecalc)
 
 if base < 30000:
     print('Isento')
