@@ -12,18 +12,18 @@ deducao = (geral_dependente+educacao)
 basecalc = (base-deducao)
 print("Base de calculo com as deduções", basecalc)
 
-if base < 30000:
+if basecalc < 30000:
     print('Isento')
 
-elif 30000 <= base < 38400:
+elif 30000 <= basecalc < 38400:
     print('Aliquota de 7,5%')
     print("Imposto devido:", ((base*7.5)/100))
 
-elif 38400 <= base < 50400:
+elif 38400 <= basecalc < 50400:
     print('Aliquota de 15%')
     print("Imposto devido:", ((base*15)/100))
 
-elif 50400 <= base < 63600:
+elif 50400 <= basecalc < 63600:
     print('Aliquota de 22,5%')
     print("imposto devido:", ((base*22.5)/100))
 else:
