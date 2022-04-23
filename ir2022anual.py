@@ -10,7 +10,7 @@ educacao = (dependentes * 3561.50)
 print("Valor para dedução com dependentes:", (geral_dependente+educacao))
 cacprev = ((prevpriv*12)/100)
 
-deducao = (geral_dependente+educacao)
+deducao = (geral_dependente+educacao+cacprev)
 basecalc = (base-deducao)
 print("Base de calculo com as deduções", basecalc)
 
