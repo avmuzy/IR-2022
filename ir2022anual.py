@@ -1,19 +1,19 @@
+# input de salario
 salario = float(input("Digite o salário para cálculo do imposto: "))
-
 base = salario * 12
 print("Rendimento anual:", base)
 imposto = 0
+# calculo das deduções
 prevpriv = float(input("Digite o valor da previdencia privada cas possua:"))
 dependentes = int(input(" digite o numero de dependentes: "))
 geral_dependente = (dependentes * 2275.08)
 educacao = (dependentes * 3561.50)
 print("Valor para dedução com dependentes:", (geral_dependente+educacao))
 cacprev = ((prevpriv*12)/100)
-
 deducao = (geral_dependente+educacao+cacprev)
 basecalc = (base-deducao)
 print("Base de calculo com as deduções", basecalc)
-
+# Calculo da faixa de imposto
 if basecalc < 30000:
     print('Isento')
 
